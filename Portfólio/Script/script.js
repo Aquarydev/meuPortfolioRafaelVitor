@@ -1,6 +1,7 @@
 const botao = document.getElementById("modoClaro/Escuro")
 var doc = document
 
+// Alterar modo claro ou escuro
 let claro = true;
 botao.addEventListener("click", function() {
     if (claro) {
@@ -18,8 +19,20 @@ botao.addEventListener("click", function() {
 const NOME = "Rafael Vitor"
 let tituloProfissional = "Dev Full Stack"
 let minhaBio = "Dev Back End" + ", confio até no que não vejo"
+
 let anoFormatura = 2026
-let anoIngresso;
+let mesFormatura = 12
+let diaFormatura = 31
+
+let anoIngresso = 2025;
+let mesIngresso = 1
+let diaIngresso = 1
+
+let dataAtual = new Date()
+let mesAtual = dataAtual.getMonth() + 1 // Mês Atual 
+let anoAtual = dataAtual.getFullYear() // Ano Atual
+let diaAtual = dataAtual.getDate() // Dia Atual
+
 let indefinido;
 let nulo = null
 let curso = {
