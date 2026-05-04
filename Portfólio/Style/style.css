@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    background-image: url(/Portfólio/Images/cobrinha-google.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    padding-top: 20px;
+    padding-left: 1%;
+    padding-bottom: 20px;
+}
