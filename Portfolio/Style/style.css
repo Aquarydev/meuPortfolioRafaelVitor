@@ -12,3 +12,7 @@ header {
     padding-left: 1%;
     padding-bottom: 20px;
 }
+
+#titulo1 {
+    position: relative;
+}
