@@ -1,6 +1,23 @@
+const snake = document.getElementById("titulo1");
+const header = document.getElementById("header");
+
+//Titulo se animar igual a cobrinha do sliter.io
+let posicao = 0
+let velocidade = 3
+function animar() {
+    posicao += velocidade;
+    snake.style.left = `${posicao}px`
+    while (posicao > window.innerWidth - 300) {
+        posicao = -100
+    }
+    requestAnimationFrame(animar)
+}
+animar()
+
+
+// Tema Claro/Escuro
 const botao = document.getElementById("modoClaro/Escuro")
-
-
+var doc = document
 let claro = true;
 botao.addEventListener("click", function() {
     if (claro) {
@@ -15,6 +32,7 @@ botao.addEventListener("click", function() {
     claro = !claro
 })
 
+//Exibição de informações
 const NOME = "Rafael Vitor"
 let tituloProfissional = "Dev Full Stack"
 let minhaBio = "Dev Back End" + ", confio até no que não vejo"
@@ -99,3 +117,60 @@ switch (diaSemana) {
     default: diaDeHoje = "Dia inválido";
 }
 document.write(`<p> Hoje é dia -> ${diaDeHoje} </p>`)
+
+for (let i = 0; i <= 20; i++) {
+    let pares = (i % 2 === 0) ? "Par": "Impar";
+    document.getElementById("Impar/Par").innerHTML += `Esse índice ${i} é ${pares.toLowerCase()}.<br>`
+}
+
+let object = {
+    nome : "Rafael",
+    idade : 17,
+    profissao : "Piloto"
+}
+for (let chave in object) {
+    document.write(`<p> ${chave} : ${object[chave]} </p>`)
+}
+
+//QUIZ
+backendbtn = document.getElementById("perfilBack")
+frontendbtn = document.getElementById("perfilFront")
+resposta = document.getElementById("respostaPerfil")
+backend = true
+frontend = true
+
+backendbtn.addEventListener("click", function() {
+    backend = !backend
+    atualizarQuiz()
+});
+frontendbtn.addEventListener("click", function() {
+    frontend = !frontend;
+    atualizarQuiz();
+});
+
+//Função para atualizar o quiz
+function atualizarQuiz(){
+    if (frontend && backend) {
+        document.getElementById("respostaPerfil").innerText = "Seu perfil é full-stack."
+    } else if (frontend) {
+        document.getElementById("respostaPerfil").innerText = "Seu perfil é front-end."
+    } else if (backend) {
+        document.getElementById("respostaPerfil").innerText = "Seu perfil é back-end."
+    } else {
+        document.getElementById("respostaPerfil").innerText = "Você não possui perfil."
+    }
+} 
+atualizarQuiz()
+
+let habilidades = ["Comunicação","Focado","Criatividade ao elaborar resoluções de problemas"]
+function exibirHabilidades() {
+    document.write("<div>==============================</div>")
+    document.write("<div>Habilidades</div>")
+    document.write("<div>==============================</div>")
+    let j = 0
+    for (i in habilidades) {
+        j++
+        document.write(`<p>${j}: ${habilidades[i]}</p>`)
+    }
+}
+exibirHabilidades()

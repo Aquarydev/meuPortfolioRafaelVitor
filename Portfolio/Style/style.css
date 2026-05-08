@@ -4,7 +4,7 @@
 
 header {
     display: flex;
-    background-image: url(/Portfólio/Images/cobrinha-google.png);
+    background-image: url(/Portfolio/Images/cobrinha-google.png);
     background-repeat: repeat-x;
     background-size: contain;
     background-position: center;
@@ -15,4 +15,10 @@ header {
 
 #titulo1 {
     position: relative;
+}
+
+aside {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(107, 163, 50);
 }
