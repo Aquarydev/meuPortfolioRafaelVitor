@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -15,10 +16,35 @@ header {
 
 #titulo1 {
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-image: url(/Portfolio/Images/cobra.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;  
 }
 
 aside {
     width: 20%;
     height: 100%;
     background-color: rgb(107, 163, 50);
+}
+
+footer {
+    display: flex;
+    background-color: rgb(78, 119, 36);
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+.projetos {
+    background-color: rgb(136, 214, 58);
+    padding: 25px;
+    word-spacing: 4px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-style: inset;
+    margin: 10px;
+    font-size: large;
 }
