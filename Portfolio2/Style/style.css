@@ -1,18 +1,66 @@
 * {
     margin: 0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-.girarheader {
-    position: absolute;
+body {
+    position: relative; /* OBRIGATÓRIO: Mantém o conteúdo na frente do fundo */
+    margin: 0;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('/Portfolio2/Images/paisagem-verde.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5; 
+    transition: opacity 1s ease-in-out; 
+}
+
+body::after {
+    background-color: rgba(255, 0, 0, 0.6) ;
+}
+
+
+#header {
     width: 475px;
     height: auto;
     transform: rotate(45deg);
+    transition: all 1s ease;
 }
 
-@keyframes inicial {from {transform: rotate(0deg);} to {transform: rotate(45deg);}}
-@keyframes sobreMim {from {transform: rotate(45deg);} to {transform: rotate(90deg);}}
-@keyframes projetos {from {transform: rotate(90deg);} to {transform: rotate(135deg);}}
-@keyframes quisDev {from {transform: rotate(135deg);} to {transform: rotate(180deg);}}
-@keyframes contato {from {transform: rotate(180deg);} to {transform: rotate(315deg);}}
-@keyframes reiniciar {from {transform: rotate(315deg);} to {transform: rotate(360deg);}}
+.container {
+    display: flex;
+    flex-direction: row; 
+    min-height: 100vh;      
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 65px;
+    transition: all 1s ease-in-out;
+}
+
+p {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.main {
+    padding: 40px 50px 
+}
+
+.containermain {
+    text-align: center;
+}
+
