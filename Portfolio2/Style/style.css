@@ -6,9 +6,10 @@
 }
 
 body {
-    position: relative; /* OBRIGATÓRIO: Mantém o conteúdo na frente do fundo */
+    position: relative; 
     margin: 0;
     min-height: 100vh;
+    transition: all 1s ease-in-out;
 }
 
 body::before {
@@ -24,12 +25,8 @@ body::before {
     background-position: center;
     background-size: cover;
     opacity: 0.5; 
-    transition: opacity 1s ease-in-out; 
 }
 
-body::after {
-    background-color: rgba(255, 0, 0, 0.6) ;
-}
 
 
 #header {
@@ -54,13 +51,23 @@ h1 {
 p {
     font-size: 20px;
     padding: 10px 0px;
+    transition: all 1s ease-in-out;
 }
 
 .main {
-    padding: 40px 50px 
+    padding: 60px 50px 
 }
 
 .containermain {
     text-align: center;
 }
 
+@keyframes digitando {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+#texto {
+    padding-top: 10px;
+    text-decoration: double;
+}
