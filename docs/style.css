@@ -20,7 +20,7 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url('/Portfolio2/Images/paisagem-verde.png');
+    background-image: url('paisagem-verde.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
