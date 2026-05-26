@@ -62,6 +62,22 @@ let h1 = document.getElementById("h1")
 let texto = document.getElementById("texto")
 let body = document.querySelector("body")
 
+
+//Dicionários para armazenar Projetos
+const projetos = [{
+    "nome" : "Software de Gerenciamento de Estacionamentos.",
+    "tecnologias" : "Python, Tkinter e SQLite.",
+    "descricao" : "Desenvolvimento de um software para uma loja.",
+    "conhecimentos" : "Linguagem de Python, Banco de Dados, Responsividade e Tkinter(API).",
+    "oQueTiveQueAturar" : ["Dificuldade em esclarecer duvídas","Falta de criatividade em conjunto"]
+},{
+    "nome" : "Software de Gerenciamento de Fast Food.",
+    "tecnologias" : "Python, Tkinter e SQLite.",
+    "descricao" : "Desenvolvimento de um software para um estacionamento.",
+    "conhecimentos" : "Linguagem de Python, Banco de Dados, Responsividade e Tkinter(API).",
+    "oQueTiveQueAturar" : ["Minha Dupla","Plagiadores"]
+}]
+
 //Aqui que a coisa funciona e o Dev chora
 async function abas(abaangulo) {
     switch (abaangulo) {
